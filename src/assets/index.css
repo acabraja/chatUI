@@ -438,4 +438,5 @@ textarea {
 }
 .dray-topbar {
   background: transparent !important;
+  background-color: red;
 }
