@@ -31,7 +31,7 @@ export const GuestBubble = (props: Props) => {
   });
 
   return (
-    <div class="flex justify-end mb-2 items-end guest-container" style={{ 'margin-left': '50px' }}>
+    <div class="flex justify-end mb-2 items-end guest-container dray-guest-container" style={{ 'margin-left': '50px' }}>
       <div
         class="max-w-full flex flex-col justify-center items-start chatbot-guest-bubble px-4 py-2 gap-2 dray-guest-bubble"
         data-testid="guest-bubble"
