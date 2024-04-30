@@ -436,3 +436,6 @@ textarea {
   padding: 10px 10px;
   font-family: 'Poppins', sans-serif;
 }
+.dray-topbar {
+  background: transparent !important;
+}
