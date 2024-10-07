@@ -28,6 +28,10 @@ export const SendButton = (props: SendButtonProps) => {
   );
 };
 export const DeleteButton = (props: SendButtonProps) => {
+  // Check if <flowise-fullchatbot> is present in the DOM
+  const isFullChatbot = document.querySelector('flowise-fullchatbot') !== null;
+  const paddingClass = isFullChatbot ? 'px-4' : 'px-12';
+
   return (
     <button
       type="submit"
@@ -38,7 +42,7 @@ export const DeleteButton = (props: SendButtonProps) => {
         props.class
       }
       style={{ background: 'transparent', border: 'none' }}
-      title="New Chat"
+      title="Reset Chat"
     >
       <Show when={!props.isLoading} fallback={<Spinner class="text-white" />}>
         <DeleteIcon color={props.sendButtonColor} class={'send-icon flex ' + (props.disableIcon ? 'hidden' : '')} />
